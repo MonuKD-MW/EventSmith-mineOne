@@ -1,0 +1,713 @@
+:root {
+    --primary-color: rgba(58, 117, 196, 1);
+    --secondary-color: #2ecc71;
+    --text-color: rgba(102, 102, 102, 1);
+  }
+  
+
+
+  .portfolio-container {
+    width: 1206px;
+    min-height: 100vh;
+    gap: 1rem;
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.portfolio-title-container-pagination{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    width: 1206px;
+}
+.portfolio-title-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    width: 60%;
+    .portfolio-title{
+        color: var(--text-color);
+        font-family: Noto Sans;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 27.24px;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+    }
+    .portfolio-title-2{
+        font-family: Noto Sans;
+        font-size: 34px;
+        font-weight: 500;
+        line-height: 51px;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        width: 1206px;
+        height: 51px;
+    }
+}
+
+.portfolio-form-step-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1px;
+    width: 100%;
+}
+.portfolio-form-step-1-container1 , 
+.portfolio-form-step-1-container2,
+.portfolio-form-step-1-container3,
+.portfolio-form-step-1-container4
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 1206px;
+    padding: 25px 0px 0px 0px;
+    .portfolio-form-step-container-left ,
+    .portfolio-form-step-container-right
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        position: relative;
+        margin-top: 10px;
+        padding: 2px 0px;
+        .input-field{
+            width: 100%;
+            padding: 1px 10px;
+            
+        }
+        label,option{
+            position: absolute;
+            width: 100%;
+            top: 9%;
+            left: 24px;
+            font-size: 13px;
+            color: var(--text-color);
+            font-family: Noto Sans;
+            font-weight: 400;
+            transition: 0.2s ease all;
+            pointer-events: none;
+        }
+        input,select{
+            width: 100%;
+            height: 59px;
+            border-radius: 12px;
+            border: 1px solid rgba(210, 210, 210, 1);
+            background-color: #fff;
+            padding: 15px 40px 10px 24px;
+            font-size: 16px;
+            outline: none;
+            border: none;
+            font-family: Noto Sans;
+        }
+        span{
+            position: absolute;
+      top: 35%;
+      right: 30px;
+      font-size: 15px;
+  }
+    }
+}
+/* container 3 */
+.portfolio-form-step1-area-code
+{  
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 15%;
+        position: relative;
+        margin-top: 10px;
+        padding: 2px;
+        label{
+            position: absolute;
+            top: 9%;
+            left: 24px;
+            font-size: 13px;
+            color: var(--text-color);
+            font-family: Noto Sans;
+            font-weight: 400;
+            transition: 0.2s ease all;
+            pointer-events: none;
+        }
+        select{
+            width: 100%;
+            height: 59px;
+            border-radius: 12px;
+            border: 1px solid rgba(210, 210, 210, 1);
+            padding: 15px 40px 10px 24px;
+            font-size: 16px;
+            outline: none;
+            border: none;
+            font-family: Noto Sans;
+            background-color: #fff;
+    
+        }
+        span{
+            position: absolute;
+            top: 35%;
+            right: 30px;
+            font-size: 15px;
+        }
+    
+}
+.portfolio-form-step1-phone-number
+{ 
+        width: 30%;
+        position: relative;
+        margin-top: 10px;
+        padding: 2px;
+        .edit-phone-area-code {
+            position: absolute;
+            top:23%;
+            right: 24px;
+            font-size: 15px;
+            color:rgba(0, 203, 132, 1);
+            width: 70px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: Noto Sans;
+            font-weight: 200;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none; 
+
+        }
+        label{
+            position: absolute;
+            top: 9%;
+            left: 24px;
+            font-size: 13px;
+            color: var(--text-color);
+            font-family: Noto Sans;
+            font-weight: 400;
+            transition: 0.2s ease all;
+            pointer-events: none;
+        }
+        input{
+            width: 100%;
+            height: 59px;
+            border-radius: 12px;
+            border: 1px solid rgba(210, 210, 210, 1);
+            padding: 15px 40px 10px 24px;
+            font-size: 16px;
+            outline: none;
+            border: none;
+            font-family: Noto Sans;
+        }
+
+}
+.portfolio-form-step1-country
+{  
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+        position: relative;
+        margin-top: 10px;
+        padding: 2px;
+        label{
+            position: absolute;
+            top: 9%;
+            left: 24px;
+            font-size: 13px;
+            color: var(--text-color);
+            font-family: Noto Sans;
+            font-weight: 400;
+            transition: 0.2s ease all;
+            pointer-events: none;
+        }
+        select{
+            width: 100%;
+            height: 59px;
+            border-radius: 12px;
+            border: 1px solid rgba(210, 210, 210, 1);
+            padding: 15px 220px 10px 14px;
+            font-size: 16px;
+            outline: none;
+            border: none;
+            font-family: Noto Sans;
+            background-color: #fff;
+
+        }
+        span{position: absolute;
+            top: 35%;
+            right: 30px;
+            font-size: 15px;
+            z-index: 0;
+        }
+    
+}
+/* pagination */
+.portfolio-pagination {
+    font-family: Noto Sans;
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    width: 85%;
+    gap: 21px;
+    padding: 20px 0px;
+  }
+.pagination-step {
+  cursor: pointer;
+  text-align: center;
+  width: 100%;
+}
+
+
+.pagination-step.completed {
+  color: var(--primary-color)
+}
+
+.pagination-step.current {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.pagination-step:hover {
+  color: var(--primary-color)
+}
+
+.pagination-line {
+  width: 40%; 
+  height: 2px; 
+  background-color: rgba(44, 44, 46, 0.5);
+  align-self: center;   
+}
+
+
+
+.button-container-portfolio {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+
+}
+
+/* Back Button Styles */
+.back-button-portfolio {
+    width:100%;
+    height: 51px;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-family: Noto Sans;
+    font-weight: 600;
+    /* background-color: rgba(242, 242, 242, 1); Light Grey Background */
+    color: rgba(153, 153, 153, 1); /* Grey Text */
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.back-button:disabled {
+    background-color: rgba(242, 242, 242, 1); /* Disabled Light Grey */
+    color: rgba(204, 204, 204, 1); /* Lighter Grey Text */
+    cursor: not-allowed;
+}
+.back-button:not(:disabled){
+  color:var(--primary-color);
+  border: 1px solid var(--primary-color);
+  background-color: #fff;
+}
+
+/* Next & Submit Button Styles */
+.portfolio-next-button,
+.portfolio-submit-button {
+    width: 100%;
+    height: 51px;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-family: Noto Sans;
+    font-weight: 600;
+    background-color: var(--primary-color);
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.portfolio-next-button:hover,
+.portfolio-submit-button:hover {
+    background-color:var(--primary-color) /* Darker Orange on Hover */
+}
+
+/* Arrow Icon Styling */
+.next-button::after,
+.submit-button::after {
+    font-size: 36px;
+    text-align: center;
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+}
+
+.back-button-portfolio::before {
+    padding-right: 8px;
+}
+
+/* step-2 */
+.portfolio-form-step-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 1206px;
+    gap: 24px;
+    span{
+        position: absolute;
+        right: 0px;
+        left: 30px;
+        top: 10px;
+    }
+}
+
+.portfolio-form-step-2-container1,
+.portfolio-form-step-2-container2,
+.portfolio-form-step-2-container3,
+.portfolio-form-step-2-container4,
+.portfolio-form-step-2-container5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 1206px;
+    padding: 25px 0px 0px 0px;
+}
+
+.portfolio-form-step-2-container1-left {
+    width: 165px;
+    height: 165px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+    position: relative;
+    label{
+        position: absolute;
+        top: 100%;
+    }
+    span{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 130%;
+    }
+}
+
+.portfolio-form-step-2-container1-right {
+    width: calc(100% - 185px);
+    position: relative;
+    margin-top: 10px;
+    padding: 2px;
+}
+
+.portfolio-form-step-2-container2-left,
+.portfolio-form-step-2-container2-right,
+.portfolio-form-step-2-container3-left,
+.portfolio-form-step-2-container3-right,
+.portfolio-form-step-2-container4-left,
+.portfolio-form-step-2-container4-right,
+.portfolio-form-step-2-container5-left,
+.portfolio-form-step-2-container5-right {
+    width: 100%;
+    position: relative;
+    margin-top: 10px;
+    padding: 2px;
+}
+
+.portfolio-form-step-2 label {
+    position: absolute;
+    top: 9%;
+    left: 24px;
+    font-size: 13px;
+    color: var(--text-color);
+    font-family: Noto Sans;
+    font-weight: 400;
+    transition: 0.2s ease all;
+    pointer-events: none;
+}
+
+.portfolio-form-step-2 input,
+.portfolio-form-step-2 select {
+    width: 100%;
+    height: 59px;
+    border-radius: 12px;
+    border: 1px solid rgba(210, 210, 210, 1);
+    background-color: #fff;
+    padding: 15px 40px 10px 24px;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    font-family: Noto Sans;
+    appearance: none;
+}
+
+.portfolio-form-step-2-container6 {
+    width: 100%;
+    padding: 25px 0px 0px 0px;
+}
+
+.portfolio-form-step-2-container6-left {
+    width: 100%;
+    position: relative;
+}
+
+.portfolio-form-step-2-container6-left textarea {
+    width: 100%;
+    min-height: 120px;
+    border-radius: 12px;
+    border: 1px solid rgba(210, 210, 210, 1);
+    background-color: #fff;
+    padding: 30px 24px 10px 24px;
+    font-size: 16px;
+    outline: none;
+    font-family: Noto Sans;
+    resize: vertical;
+}
+
+/* File input specific styles */
+.file-input-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    cursor: pointer;
+}
+
+.file-input-container input[type="file"] {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+/* Responsive Design */
+@media (max-width: 1400px) {
+    .portfolio-container,
+    .portfolio-title-container-pagination,
+    .portfolio-title-container,
+    .portfolio-form-step-1-container1,
+    .portfolio-form-step-1-container2,
+    .portfolio-form-step-1-container3,
+    .portfolio-form-step-1-container4 {
+        max-width: 95%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .portfolio-form-step-1-container1, 
+    .portfolio-form-step-1-container2,
+    .portfolio-form-step-1-container3,
+    .portfolio-form-step-1-container4 {
+        .portfolio-form-step-container-left,
+        .portfolio-form-step-container-right {
+            width: 48%; /* Adjust slightly for better spacing */
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .portfolio-form-step-1-container1, 
+    .portfolio-form-step-1-container2,
+    .portfolio-form-step-1-container3,
+    .portfolio-form-step-1-container4 {
+        .portfolio-form-step-container-left,
+        .portfolio-form-step-container-right {
+            width: 100%;
+        }
+    }
+
+    .portfolio-form-step1-area-code {
+        width: 30%;
+    }
+
+    .portfolio-form-step1-phone-number {
+        width: 65%;
+    }
+}
+
+@media (max-width: 768px) {
+    .portfolio-form-step1-area-code {
+        width: 35%;
+    }
+
+    .portfolio-form-step1-phone-number {
+        width: 60%;
+    }
+
+    .portfolio-pagination {
+        gap: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .portfolio-form-step1-area-code {
+        width: 40%;
+    }
+
+    .portfolio-form-step1-phone-number {
+        width: 55%;
+    }
+
+    .button-container-portfolio {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .portfolio-form-step1-area-code,
+    .portfolio-form-step1-phone-number {
+        width: 100%;
+    }
+
+    .portfolio-pagination {
+        gap: 10px;
+    }
+}
+
+/* Add these media queries at the end of your existing CSS */
+
+@media (max-width: 1400px) {
+  .portfolio-container {
+    width: 95%;
+  }
+
+  .portfolio-title-container,
+  .portfolio-form-step-1-container1,
+  .portfolio-form-step-1-container2,
+  .portfolio-form-step-1-container3,
+  .portfolio-form-step-1-container4,
+  .portfolio-form-step-2 {
+    width: 95%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .portfolio-container {
+    width: 90%;
+  }
+
+  .portfolio-title-container,
+  .portfolio-form-step-1-container1,
+  .portfolio-form-step-1-container2,
+  .portfolio-form-step-1-container3,
+  .portfolio-form-step-1-container4,
+  .portfolio-form-step-2 {
+    width: 90%;
+  }
+}
+
+@media (max-width: 992px) {
+  .portfolio-container {
+    width: 85%;
+  }
+
+  .portfolio-form-step-1-container1,
+  .portfolio-form-step-1-container2,
+  .portfolio-form-step-1-container3,
+  .portfolio-form-step-1-container4 {
+    width: 85%;
+  }
+
+  .portfolio-form-step-2-container1 {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    padding: 20px 0;
+  }
+
+  .portfolio-form-step-2-container1-left {
+    width: 165px;
+    margin: 0 auto;
+  }
+
+  .portfolio-form-step-2-container1-right {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .portfolio-container {
+    width: 90%;
+    padding: 1rem 0;
+  }
+
+  .portfolio-form-step-1-container3 {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .portfolio-form-step1-area-code,
+  .portfolio-form-step1-phone-number,
+  .portfolio-form-step1-country {
+    width: 100%;
+  }
+
+  .portfolio-pagination {
+    width: 95%;
+    font-size: 14px;
+  }
+
+  .portfolio-form-step-2-container2,
+  .portfolio-form-step-2-container3,
+  .portfolio-form-step-2-container4,
+  .portfolio-form-step-2-container5 {
+    flex-direction: column;
+    height: auto;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .portfolio-container {
+    width: 95%;
+  }
+
+  .button-container-portfolio {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .portfolio-title-2 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  input, select {
+    padding: 12px 15px 8px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .portfolio-container {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .portfolio-pagination {
+    width: 100%;
+    font-size: 12px;
+    gap: 8px;
+  }
+
+  .portfolio-title-2 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}

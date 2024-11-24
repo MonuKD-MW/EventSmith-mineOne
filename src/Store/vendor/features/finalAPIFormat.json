@@ -1,0 +1,175 @@
+{
+  "portfolioId": "business-short-url",
+  "brandLogoUrl": "s3://upload/path",
+  "googleBusinessId": "some-id",
+  "eventType": ["Weddings"],
+  "businessDisplayName": "string",
+  "service": "string",
+  "serviceSubCategories": ["sub1", "sub2"],
+  "showContactInfo": false,
+  "showAddressInfo": false,
+  "showMapsInfo": false,
+  "showOwnerDetails": false,
+  "portfolioDescription": "HTML text with <B> and <I> rendering allowed, along with new lines, bullets, emojis.",
+  "socialMedia": {
+    "instagram": "string",
+    "facebook": ""
+  },
+  "businessStartYear": 2018,
+  "imageFolder": "s3://uploadUrl-folder-path",
+  "contactInfo": [
+    {
+      "contactName": "Mr. John Doe1",
+      "title": "Owner",
+      "contactNumber": "+1 001-002-0234",
+      "emailId": "some-email1@gmail.com"
+    },
+    {
+      "firstName": "John",
+      "lastName": "Doe",
+      "title": "Mr",
+      "designation": "Manager",
+      "phoneNumber": "001-002-0235",
+      "areaCode": "+1",
+      "emailId": "some-email2@gmail.com"
+    }
+  ],
+  "address": {
+    "streetAddress1": "123 Main St E",
+    "streetAddress2": "",
+    "unitOrSuiteNumber": "408",
+    "city": "Toronto",
+    "province": "Ontario",
+    "country": "Canada",
+    "postalCode": "M12 T34"
+  },
+  "ownerName": "Mr. John Doe",
+  "faqs": [
+    {
+      "categoryName": "Pricing and Booking Requirements",
+      "questionsArray": [
+        {
+          "question": "What is the starting price per person for your services?",
+          "type": "range",
+          "answer": [20, 40],
+          "unit": "person"
+        },
+        {
+          "question": "Is there a cancellation policy, and are there any fees for rescheduling?",
+          "type": "text",
+          "answer": "Yes, 50% fee refund up to 3 days before the event. Rescheduling can be done up to 3 days before."
+        },
+        {
+          "question": "Do you have a rental fee or minimum spend requirement?",
+          "type": "html-text",
+          "answer": "<b>Rental Fee:</b> A base rental fee of $5,000 is required for all events.\n<b>Minimum Spend:</b> Food and beverage minimums start at $7,500, which may vary by event type and date."
+        },
+        {
+          "question": "What cuisine type(s) do you provision?",
+          "type": "multi-select",
+          "answer": ["Indian", "Fusion"]
+        },
+        {
+          "question": "Do you provide bartending services?",
+          "type": "single-select",
+          "answer": "Yes"
+        },
+        {
+          "question": "What is your usual advance notice time to book an event?",
+          "type": "text",
+          "answer": "1 month"
+        }
+      ]
+    }
+  ],
+  "facilities": [
+    {
+      "facilityName": "Air Conditioning",
+      "imageUrl": "http://example.com/images/air_conditioning.png"
+    },
+    {
+      "facilityName": "Free Wifi",
+      "imageUrl": "http://example.com/images/free_wifi.png"
+    }
+  ],
+  "maxSeatingCapacity": 100,
+  "maxStandingCapacity": 150,
+  "previewImages": [
+    {
+      "s3Location": "s3://..",
+      "tag": "Corporate Party",
+      "title": "Cheering colleagues",
+      "previewImage": true,
+      "eventDate": "yyyy-mm"
+    },
+    {
+      "s3Location": "s3://..",
+      "tag": "Corporate Party",
+      "title": null,
+      "previewImage": true,
+      "eventDate": "yyyy-mm"
+    }
+  ],
+  "servicePriceRange": [1000, 2000],
+  "priceUnit": "package",
+  "packages": [
+    {
+      "packageName": "package1",
+      "packageDescription": "This package allows 40 people.",
+      "minPrice": 1500,
+      "maxPrice": 2000,
+      "unit": "person",
+      "attachment": "s3://upload-path-for-pdf-or-png",
+      "dealDetails": {
+        "dealName": "10% off till end of this month!",
+        "dealPrice": "1500",
+        "validFrom": "yyyy-mm-dd",
+        "validUntil": "yyyy-mm-dd"
+      }
+    },
+    {
+      "packageName": "Deluxe 24-hour Package",
+      "packageDescription": "HTML text with <B> and <I> rendering allowed, along with new lines, bullets.",
+      "minPrice": 1500,
+      "maxPrice": 2000,
+      "unit": "person",
+      "attachment": "s3://upload-path-for-pdf-or-png"
+    },
+    {
+      "packageName": "Deluxe 24-hour Package",
+      "packageDescription": "HTML text with <B> and <I> rendering allowed, along with new lines, bullets.",
+      "minPrice": 1500,
+      "maxPrice": 2000,
+      "unit": "package"
+    }
+  ],
+  "eventAreas": [
+    {
+      "name": "Grand Marquee Room",
+      "maxSeatingCapacity": 150,
+      "maxStandingCapacity": 170,
+      "attachments": ["s3://upload-path-for-pdf-or-png"],
+      "description": "This area allows 170 people.",
+      "price": 80000
+    }
+  ],
+  "menus": [
+    {
+      "title": "Dinner Menu",
+      "description": "Our dinner menu is a 3-course meal.",
+      "attachment": "upload-path"
+    }
+  ],
+  "latestEvents": [
+    {
+      "eventName": "string",
+      "eventDate": "yyyy-mm-dd",
+      "images": ["s3://", "s3://"]
+    },
+    {
+      "eventName": "string2",
+      "eventDate": "yyyy-mm-dd",
+      "images": ["s3://", "s3://"]
+    }
+  ]
+}

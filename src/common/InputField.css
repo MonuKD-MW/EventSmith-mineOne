@@ -1,0 +1,54 @@
+.common-input-field {
+        position: relative;
+        width: 100%;
+      }
+      
+      .common-input-wrapper {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .common-input-field input {
+        width: 100%;
+        padding: 15px 20px;
+        border: 1px solid #e2e8f0;
+        border-radius: 12px;
+        margin:3px 0px;
+        font-size: 1rem;
+        transition: border-color 0.2s;
+      }
+      
+      .common-input-field input:focus {
+        outline: none;
+      }
+      
+      .common-input-field label {
+        display: block;
+        position:absolute;
+        z-index: 10;
+        left: 20px;
+        top:6px;
+        color: #333;
+        font-size: 0.875rem;
+        font-weight: 500;
+      }
+      
+      .common-password-icon {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        z-index: 10;
+      }
+      
+     
+      
+      /* Styles for the icons */
+      .common-password-icon svg {
+        width: 1.25rem;
+        height: 1.25rem;
+      }
