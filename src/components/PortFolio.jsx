@@ -2,6 +2,7 @@ import "./Portfolio.css";
 import { countryCodes, regions, ServiceData } from "../staticData.json";
 import PortfolioFormStep1 from "./PortfolioFormStep1";
 import PortfolioFormStep2 from "./PortfolioFormStep2";
+import PortfolioFormStep3 from "./PortFolioFormStep3";
 import Pagination from "../common/Pagination";
 import usePortFolio from "../utils/CustomHooks/usePortfolio";
 
@@ -25,6 +26,7 @@ function Portfolio() {
     handleSubCategoryChange,
     handleLocalStateForStep,
     localStateForStep,
+    setLocalStateForStep,
   } = usePortFolio();
 
   return (
@@ -66,6 +68,13 @@ function Portfolio() {
         multiple={true}
         handleLocalStateForStep={handleLocalStateForStep}
         localStateForStep={localStateForStep}
+        />
+      )}
+      {step === 3 && (
+        <PortfolioFormStep3
+        handleLocalStateForStep={handleLocalStateForStep}
+        localStateForStep={localStateForStep}
+        setLocalStateForStep={setLocalStateForStep}
         />
       )}
 

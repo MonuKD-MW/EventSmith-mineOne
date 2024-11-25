@@ -20,8 +20,29 @@ const vendorDataSlice = createSlice({
 		province: "Ontario", // from address
 		businessDescription: "", // Not explicitly provided in the response
 		title: "Owner", // from contactInfo (title of Owner)
-		socialMedia: [], // Not provided in the response
-		references: [] // Not provided in the response
+		socialMedia: [{
+			socialMediaHandle: "Facebook",
+			pageLink: "Link goes here"
+		}], // Not provided in the response
+		references: [
+			{
+				"referenceBusinessName": "Tech Solutions Inc.",
+				"areaCode": "123",
+				"phone": "456-7890",
+				"referenceWebsite": "https://www.techsolutions.com",
+				"address": "123 Innovation Drive, Tech City",
+				"postalCode": "T1C 4H2"
+			},
+			{
+				"referenceBusinessName": "Green Energy Co.",
+				"areaCode": "987",
+				"phone": "654-3210",
+				"referenceWebsite": "https://www.greenenergy.com",
+				"address": "456 Sustainability Lane, Eco Town",
+				"postalCode": "E7G 5B3"
+			}
+		]
+		// Not provided in the response
 	},
 	reducers: {
 		updateVendorData: (state, action) => {

@@ -28,29 +28,7 @@ const usePortFolio = () => {
 		// Destructure necessary properties from the event target
 		const { name, value } = e.target;
 		console.log("[name,value,type,selectedOptions] : ",name,Array.isArray(value));
-		// Handle multiple select inputs (when user can select multiple options)
-		// if (type === 'select-multiple' && selectedOptions) {
-		// 	// Convert HTMLCollection of selected options to an array of values
-		// 	// Array.from() creates an array from the selectedOptions collection
-		// 	// .map() extracts just the value property from each option
-		// 	const selectedValues = Array.from(selectedOptions).map(option => option.value);
-			
-		// 	// Update local state using the functional update pattern
-		// 	// This ensures we're working with the most current state
-		// 	console.log("[selectedValues] : ",selectedValues);
-		// 	setLocalStateForStep(prevState => ({
-		// 		...prevState,           // Spread existing state
-		// 		[name]: selectedValues  // Update only the field that changed
-		// 	}));
-		// } 
-		// // Handle single select inputs or fallback case
-		// else {
-		// 	// Update local state with single value
-		// 	setLocalStateForStep(prevState => ({
-		// 		...prevState,    // Spread existing state
-		// 		[name]: value    // Update with single selected value
-		// 	}));
-		// }
+		
 	}
 	//End of myCode here
 
@@ -70,25 +48,7 @@ const usePortFolio = () => {
 	};
 
 
-	const handleChange = (e, nested) => {
-		const { name, value } = e.target;
-
-		if (nested) {
-			dispatch(setPortfolioData({
-				...vendorData,
-				businessAddress: {
-					...vendorData.businessAddress,
-					[name]: value,
-				},
-			}));
-			console.log(value);
-		} else {
-			dispatch(setPortfolioData({
-				...vendorData,
-				[name]: value,
-			}));
-		}
-	};
+	
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
@@ -128,8 +88,10 @@ const usePortFolio = () => {
 
 			updateVendorDataWithLocalState();
 		}
-		console.log("valid", valid);
-		console.log("Vendor data", vendorData);
+		if(step === 3){
+			// ! validation logic
+			updateVendorDataWithLocalState();
+		}
 		if (true) {
 			setStep(step + 1);
 		}
@@ -206,7 +168,6 @@ const usePortFolio = () => {
 		subCategoryOptions,
 		phoneVerified,
 		getStepClass,
-		handleChange,
 		handleSubmit,
 		handleNext,
 		handleFileChange,
@@ -215,6 +176,7 @@ const usePortFolio = () => {
 		handleSubCategoryChange,
 		handleLocalStateForStep,
 		localStateForStep,
+		setLocalStateForStep,
 	
 	};
 };
